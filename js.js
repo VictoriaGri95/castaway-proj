@@ -1,20 +1,16 @@
 const burgerBtn = document.getElementById('burgerBtn');
 const burgerMenu = document.getElementById('burgerMenu');
 const menuLinks = document.querySelectorAll('.burger-menu__list a');
+const htmlElement = document.querySelector("html")
 
 // Функция для открытия/закрытия меню
 function toggleBurgerMenu() {
-  const isOpening = !burgerMenu.classList.contains('active');
 
   burgerMenu.classList.toggle('active');
   burgerBtn.classList.toggle('active');
 
   // Блокируем прокрутку body при открытом меню
-  if (isOpening) {
-    document.body.classList.add('no-scroll');
-  } else {
-    document.body.classList.remove('no-scroll');
-  }
+  htmlElement.classList.toggle('unscroll')
 }
 
 // Функция для плавной прокрутки
@@ -32,7 +28,7 @@ function smoothScrollToSection(targetId) {
 function closeBurgerMenu() {
   burgerMenu.classList.remove('active');
   burgerBtn.classList.remove('active');
-  document.body.classList.remove('no-scroll');
+  htmlElement.classList.remove('unscroll');
 }
 
 // Вешаем обработчики

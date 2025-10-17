@@ -70,7 +70,6 @@ input:focus {
   line-height: 159%;
   color: #fff;
 }
-
 /* Кнопка бургера - скрыта на десктопе */
 .burger-btn {
   display: none;
@@ -99,7 +98,6 @@ input:focus {
 .burger-menu {
   display: none;
 }
-
 .main-section {
   padding: 40px 0;
 }
@@ -157,7 +155,7 @@ input:focus {
   width: 160px;
   height: 105px;
   position: absolute;
-  left: 0px;
+  left: 0;
 }
 
 .level {
@@ -437,7 +435,7 @@ input, input::placeholder {
   font-size: 24px;
   line-height: 120%;
   color: rgba(255, 255, 255, 0.7);
-  padding: 26px 0px 27px 19px;
+  padding: 26px 0 27px 19px;
 }
 
 .episodes-button.submit {
@@ -540,6 +538,11 @@ footer {
   }
 
   .header {
+    /*height: 124px;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    /*padding: 0 20px;*/
     position: relative;
     z-index: 2001;
   }
@@ -574,10 +577,11 @@ footer {
     left: 0;
     width: 100vw;
     height: calc(100vh - 124px);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     transform: translateY(-100vh); /* Скрываем полностью за экраном */
     transition: transform 0.4s ease-in-out;
+    /*z-index: 999;*/
   }
 
   .burger-menu.active {
@@ -628,86 +632,85 @@ footer {
   }
 
   /* Запрет скролла при открытом меню */
-  body.no-scroll {
+  .unscroll {
     overflow: hidden;
   }
+
+
+  .main-info {
+    margin-bottom: 0;
+  }
+
+  .level {
+    margin-left: 22px;
+  }
+
+  .episodes-section-title-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 60px;
+    padding: 0 40px;
+  }
+
+  .info-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .info-wrapper img {
+    object-fit: cover;
+    max-width: 648px;
+    width: 100%;
+    height: 465px;
+    margin: 0 auto;
+  }
+
+  .host-section {
+    padding: 100px 40px 115px 40px;
+  }
+
+  .arrow-anchor,
+  .host-section-header {
+    margin-bottom: 0;
+  }
+
+  .host-section-title-wrapper,
+  .about-host {
+    gap: 20px;
+  }
+
+  .subscribe-section-wrapper {
+    flex-direction: column;
+    padding: 60px 40px;
+    gap: 85px;
+  }
+
+  .subscribe-section-wrapper::after {
+    transform: rotate(-45deg);
+    right: 0;
+    left: auto;
+  }
+
+  .subscribe-form {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .review-wrapper {
+    max-width: 356px;
+    padding: 53px 20px 50px 40px;
+  }
+
+  .footer-wrapper {
+    gap: 130px;
+    padding: 0 40px;
+  }
+
+  .footer-list-wrapper {
+    gap: 10px;
+  }
 }
-
-
-.main-info {
-  margin-bottom: 0;
-}
-
-.level {
-  margin-left: 22px;
-}
-
-.episodes-section-title-wrapper {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 60px;
-  padding: 0 40px;
-}
-
-.info-wrapper {
-  flex-direction: column;
-  gap: 40px;
-}
-
-.info-wrapper img {
-  object-fit: cover;
-  max-width: 648px;
-  width: 100%;
-  height: 465px;
-  margin: 0 auto;
-}
-
-.host-section {
-  padding: 100px 40px 115px 40px;
-}
-
-.arrow-anchor,
-.host-section-header {
-  margin-bottom: 0;
-}
-
-.host-section-title-wrapper,
-.about-host {
-  gap: 20px;
-}
-
-.subscribe-section-wrapper {
-  flex-direction: column;
-  padding: 60px 40px;
-  gap: 85px;
-}
-
-.subscribe-section-wrapper::after {
-  transform: rotate(-45deg);
-  right: 0;
-  left: auto;
-}
-
-.subscribe-form {
-  padding: 0;
-  max-width: 100%;
-}
-
-.review-wrapper {
-  max-width: 356px;
-  padding: 53px 20px 50px 40px;
-}
-
-.footer-wrapper {
-  gap: 130px;
-  padding: 0 40px;
-}
-
-.footer-list-wrapper {
-  gap: 10px;
-}
-
 @media screen and (max-width: 576px) {
 
   .main-image {
@@ -848,4 +851,3 @@ footer {
     flex-direction: column;
   }
 }
-
