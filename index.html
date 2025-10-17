@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+  <title>Castaway</title>
+  <script
+    src="js.js"
+    type="module"
+  ></script>
+</head>
+<body>
+<header
+  class="header"
+  id="header"
+>
+  <div class="container">
+    <div class="header-wrapper">
+      <a href="#">
+        <img
+          src="./assets/img/Vector.svg"
+          class="logo"
+          alt="Logo Castaway"
+        >
+      </a>
+
+      <nav class="desktop-nav">
+
+        <ul class="nav-list">
+          <li class="menu-item">
+            <a
+              href="#home"
+              class="menu-link"
+            >Home
+            </a>
+          </li>
+          <li class="menu-item">
+            <a
+              href="#episodes"
+              class="menu-link"
+            >Episodes
+            </a>
+          </li>
+          <li class="menu-item">
+            <a
+              href="#about"
+              class="menu-link"
+            >About
+            </a>
+          </li>
+          <li class="menu-item">
+            <a
+              href="#contact"
+              class="menu-link"
+            >Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="burger-btn"
+        id="burgerBtn"
+        aria-label="Открыть меню"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav
+        class="burger-menu"
+        id="burgerMenu"
+      >
+
+        <ul class="burger-menu__list">
+          <li>
+            <a
+              href="#home"
+              class="menu-link"
+            >Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#episodes"
+              class="menu-link"
+            >Episodes
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="menu-link"
+            >About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="menu-link"
+            >Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<section
+  class="main-section"
+  id="home"
+>
+  <div class="container">
+    <div class="main-wrapper">
+      <div class="img-wrapper">
+        <img
+          class="main-image"
+          src="./assets/img/IMAGE.png"
+          alt="
+A guy with headphones listening to music"
+        >
+      </div>
+
+      <div class="main-info">
+        <h1 class="main-title">Take your podcast to the
+          <span class="next">next </span><span
+            class="level"
+          >level</span></h1>
+        <div class="platforms">
+          <span class="platform-title">Listen on</span>
+          <ul class="platform-list">
+            <li class="option">
+              <a
+                href="https://open.spotify.com/"
+                target="_blank"
+              >
+                <img
+                  class="platform-img"
+                  src="./assets/img/Spotify.svg"
+                  alt="Spotify Logo"
+                >
+              </a>
+            </li>
+            <li class="option">
+              <a
+                href="https://pocketcasts.com/"
+                target="_blank"
+              >
+                <img
+                  class="platform-img"
+                  src="./assets/img/PocketCasts.svg"
+                  alt="PocketCasts Logo"
+                >
+              </a>
+            </li>
+            <li class="option">
+              <a
+                href="https://soundcloud.com/discover"
+                target="_blank"
+              >
+                <img
+                  class="platform-img"
+                  src="./assets/img/SoundCloud.svg"
+                  alt="SoundCloud Logo"
+                >
+              </a>
+            </li>
+            <li class="option">
+              <a
+                href="https://podcasts.apple.com/us/browse"
+                target="_blank"
+              >
+                <img
+                  class="platform-img"
+                  src="./assets/img/Podcast.svg"
+                  alt="Podcast Logo"
+                >
+              </a>
+
+            </li>
+            <li class="option">
+              <a
+                href="https://overcast.fm/"
+                target="_blank"
+              >
+                <img
+                  class="platform-img"
+                  src="./assets/img/Overcast.svg"
+                  alt="Overcast Logo"
+                >
+              </a>
+
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section
+  class="episodes-section"
+  id="episodes"
+>
+  <div class="container">
+    <div class="episodes-section-title-wrapper">
+      <h2>Latest episodes</h2>
+      <button class="episodes-button">View all episodes</button>
+    </div>
+    <div class="card-wrapper">
+      <article class="card">
+        <div class="info-wrapper">
+          <img
+            src="./assets/img/IMAGE-1.png"
+            alt="Audio gear"
+          >
+          <div class="text-info-wrapper">
+            <label>Gear</label>
+            <span class="episode-inscription">Episode 3</span>
+            <h2 class="card-title">Should you get outboard audio gear?</h2>
+            <p class="text">Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</p>
+            <button class="episodes-button details">View Episode Details
+            </button>
+          </div>
+        </div>
+
+      </article>
+      <article class="card">
+        <div class="info-wrapper">
+          <img
+            src="./assets/img/IMAGE-2.png"
+            alt="Microphone"
+          >
+          <div class="text-info-wrapper">
+            <label>Tips & Tricks</label>
+            <span class="episode-inscription">Episode 2</span>
+            <h2 class="card-title">Mic tricks to take you to the next level</h2>
+            <p class="text">Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.</p>
+            <button class="episodes-button details">View Episode Details
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="info-wrapper">
+          <img
+            src="./assets/img/IMAGE-3.png"
+            alt="Best microphone"
+          >
+          <div class="text-info-wrapper">
+            <label>Gear</label>
+            <span class="episode-inscription">Episode 1</span>
+            <h2 class="card-title last">The best microphone under $200</h2>
+            <p class="text">With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.</p>
+            <button class="episodes-button details">View Episode Details
+            </button>
+          </div>
+
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section
+  class="host-section"
+  id="about"
+>
+  <div class="container">
+    <div class="host-section-wrapper">
+      <div class="host-section-title-wrapper">
+        <a
+          class="arrow-anchor"
+          href="#"
+        >
+          <img
+            class="arrow-image"
+            src="./assets/img/Arrow.png"
+            alt="Arrow"
+          >
+        </a>
+        <span class="small-label">Meet your host</span>
+        <h2 class="host-section-header">Jacob Paulaner</h2>
+        <div class="about-host">
+          <p class="text-about-host">
+            Jacob has a background in audio engineering, and has been podcasting since the early days.
+          </p>
+          <p class="text-about-host">
+            He’s here to help you level up your game by sharing everything he’s learned along the way.
+          </p>
+        </div>
+
+      </div>
+      <img
+        class="host-section-main-image"
+        src="./assets/img/IMAGE-Jacob.png"
+        alt="Photo of Jacob"
+      >
+    </div>
+  </div>
+</section>
+<section class="subscribe-section">
+  <div class="container">
+    <div class="subscribe-section-wrapper">
+      <div class="subscribe-section-title-wrapper">
+        <span class="small-label">Email Newsletter</span>
+        <h2 class="subscribe">Subscribe for updates</h2>
+      </div>
+      <form
+        class="subscribe-form"
+        action="#"
+      >
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+        >
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+        >
+        <button
+          type="submit"
+          class="episodes-button submit"
+        >Submit
+        </button>
+      </form>
+    </div>
+
+  </div>
+  </div>
+</section>
+<section class="review-section">
+  <div class="container">
+    <div class="review-section-wrapper">
+
+      <div class="review-wrapper">
+        <div class="rate">
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+        </div>
+        <h3 class="review-header">I can’t recommend this podcast enough</h3>
+        <span class="author">Betty Lacey</span>
+      </div>
+      <div class="review-wrapper">
+        <div class="rate">
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+        </div>
+        <h3 class="review-header">Jacob is the best in the business</h3>
+        <span class="author">Adam Driver</span>
+      </div>
+      <div class="review-wrapper">
+        <div class="rate">
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+        </div>
+        <h3 class="review-header">A wealth of audio knowledge</h3>
+        <span class="author">Marcus Brown</span>
+      </div>
+
+
+      <div class="review-wrapper">
+        <div class="rate">
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+        </div>
+        <h3 class="review-header">Every episode is a gem!</h3>
+        <span class="author">Jessica Knowl</span>
+      </div>
+      <div class="review-wrapper">
+        <div class="rate">
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+        </div>
+        <h3 class="review-header">Whoa whoa, let me take some notes!</h3>
+        <span class="author">Scott Adams</span>
+      </div>
+      <div class="review-wrapper">
+        <div class="rate">
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+          <img
+            src="./assets/img/Star.png"
+            alt="Rate"
+          >
+        </div>
+        <h3 class="review-header">I’ve upped my game considerably since I started listening</h3>
+        <span class="author">Steven Blast</span>
+      </div>
+
+
+    </div>
+  </div>
+
+</section>
+<footer id="contact">
+  <div class="container">
+    <div class="footer-wrapper">
+      <div class="footer-logo">
+        <a href="#">
+          <img
+            src="./assets/img/Logo.png"
+            class="footer-logo-castaway"
+            alt="Logo Castaway"
+          >
+        </a>
+        <div class="castaway-social-logo">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <img
+              class="social-icon"
+              src="./assets/img/Inst.png"
+              alt="Logo Instagram"
+            >
+          </a>
+          <a
+            href="https://x.com/"
+            target="_blank"
+          >
+            <img
+              class="social-icon"
+              src="./assets/img/twitter.png"
+              alt="Logo Twitter"
+            >
+          </a>
+          <a
+            href="https://www.facebook.com/?locale=ru_RU"
+            target="_blank"
+          >
+            <img
+              class="social-icon"
+              src="./assets/img/facebook.png"
+              alt="Logo Facebook"
+            >
+          </a>
+        </div>
+
+      </div>
+      <div class="footer-list-wrapper">
+        <ul class="footer-text-list">
+          <li>
+            <a
+              class="footer-link"
+              href="#"
+            >Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="#"
+            >About
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="#"
+            >Episodes
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="#"
+            >Contact
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-text-list">
+          <li>
+            <a
+              class="footer-link"
+              href="#"
+            >Style Guide
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="#"
+            >Instructions
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="#"
+            >Changelog
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="#"
+            >Credit
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="#"
+            >Powered by Webflow
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-link"
+              href="#"
+            >Licenses
+            </a>
+          </li>
+        </ul>
+        <ul class="platform-list">
+          <li class="option">
+            <a
+              href="https://open.spotify.com/"
+              target="_blank"
+            >
+              <img
+                class="platform-img"
+                src="./assets/img/Spotify.svg"
+                alt="Spotify Logo"
+              >
+            </a>
+          </li>
+          <li class="option">
+            <a
+              href="https://pocketcasts.com/"
+              target="_blank"
+            >
+              <img
+                class="platform-img"
+                src="./assets/img/PocketCasts.svg"
+                alt="PocketCasts Logo"
+              >
+            </a>
+          </li>
+          <li class="option">
+            <a
+              href="https://soundcloud.com/discover"
+              target="_blank"
+            >
+              <img
+                class="platform-img"
+                src="./assets/img/SoundCloud.svg"
+                alt="SoundCloud Logo"
+              >
+            </a>
+          </li>
+          <li class="option">
+            <a
+              href="https://podcasts.apple.com/us/browse"
+              target="_blank"
+            >
+              <img
+                class="platform-img"
+                src="./assets/img/Podcast.svg"
+                alt="Podcast Logo"
+              >
+            </a>
+          </li>
+          <li class="option">
+            <a
+              href="https://overcast.fm/"
+              target="_blank"
+            >
+              <img
+                class="platform-img"
+                src="./assets/img/Overcast.svg"
+                alt="Overcast Logo"
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
