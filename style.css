@@ -122,7 +122,7 @@ input:focus {
 
 .main-image {
   border-radius: 12px;
-  width: 650px;
+  max-width: 650px;
   width: 100%;
 }
 
@@ -140,7 +140,6 @@ input:focus {
   letter-spacing: 0.05em;
   margin-bottom: 90px;
   max-width: 100%;
-
 }
 
 .next {
@@ -451,18 +450,14 @@ input, input::placeholder {
 }
 
 .review-section-wrapper {
-  display: flex;
-  flex-wrap: wrap;
   gap: 16px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .review-wrapper {
   background-color: #000;
   border-radius: 32px;
-  min-width: 350px;
-  max-width: 100%;
-  flex: 1 1 300px;
   padding: 55px 55px 50px 50px;
   display: flex;
   flex-direction: column;
@@ -538,11 +533,6 @@ footer {
   }
 
   .header {
-    /*height: 124px;*/
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: space-between;*/
-    /*padding: 0 20px;*/
     position: relative;
     z-index: 2001;
   }
@@ -581,7 +571,6 @@ footer {
     -webkit-backdrop-filter: blur(10px);
     transform: translateY(-100vh); /* Скрываем полностью за экраном */
     transition: transform 0.4s ease-in-out;
-    /*z-index: 999;*/
   }
 
   .burger-menu.active {
@@ -620,7 +609,9 @@ footer {
 
   /* Анимация бургер → крестик */
   .burger-btn.active span:nth-child(1) {
-    transform: translateY(15px) rotate(45deg);
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    position: absolute;
   }
 
   .burger-btn.active span:nth-child(2) {
@@ -628,7 +619,9 @@ footer {
   }
 
   .burger-btn.active span:nth-child(3) {
-    transform: translateY(-16px) rotate(-45deg);
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    position: absolute;
   }
 
   /* Запрет скролла при открытом меню */
@@ -696,9 +689,10 @@ footer {
     padding: 0;
     max-width: 100%;
   }
-
+  .review-section-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
   .review-wrapper {
-    max-width: 356px;
     padding: 53px 20px 50px 40px;
   }
 
@@ -712,6 +706,25 @@ footer {
   }
 }
 @media screen and (max-width: 576px) {
+  .burger-btn {
+    width: 36px;
+    height: 24px;
+    position: relative;
+  }
+  .burger-btn span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+
+  /* Анимация бургер → крестик */
+  .burger-btn span:nth-child(1) { top: 0; }
+  .burger-btn span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+  .burger-btn span:nth-child(3) { bottom: 0; }
 
   .main-image {
     width: 336px;
@@ -833,7 +846,6 @@ footer {
   }
 
   .review-wrapper {
-    width: 335px;
     padding: 53px 20px 47px 20px;
   }
 
